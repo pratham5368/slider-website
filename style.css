@@ -1,0 +1,63 @@
+:root {
+    --dark: rgb(20, 20, 20);
+    --yellow: #FF533D;
+    --blue: #0f1626;
+    
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.side{
+    height: 100vh;
+    width: 100%;
+
+    display: grid;
+    place-items: center;
+
+    overflow: hidden;
+    position: absolute;
+}
+
+
+.side .title {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    font-size: 6vw;
+    margin: 0px 15vw;
+    width: 70vw;
+}
+
+#left-side {
+    background-color: var(--blue);
+    z-index: 2;
+}
+
+#right-side {
+    background-color: var(--yellow);
+}
+
+.side .fancy{
+    font-family: "Lobster", cursive;
+    font-size: 1em;
+    line-height: 0.8em;
+}
+
+#left-side .title {
+    color: aliceblue;
+}
+
+#left-side .fancy {
+    color: var(--yellow);
+}
+
+#right-side .title {
+    color: var(--dark);
+}
+
+#right-side .fancy {
+    color: white;
+}
